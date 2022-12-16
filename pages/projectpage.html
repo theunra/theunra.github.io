@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Inklusi Design</title>
+    <link rel="stylesheet" href="../global.css" type="text/css"/>
+    <script src="../scripts/projectpage.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"/>
+</head>
+<body>
+    <img class="top-logo top-logo-project-page" src="../public/logo.png"/>
+    <div id="main-container" class="content-container">
+        <div id="navbar" class="navbar-project-desc-page navbar navbar--lwide">
+            <div class="navbar-btn navbar-icon content-gray" style="animation-duration: 2s;">
+                <i class="bi bi-instagram"></i>
+            </div>
+            <div class="navbar-btn navbar-icon content-gray" style="animation-duration: 2s;">
+                <i class="bi bi-linkedin"></i>
+            </div>
+            <div class="navbar-btn navbar-icon content-gray" style="animation-duration: 1.8s;">
+                <i class="bi bi-whatsapp"></i>
+            </div>
+            <div class="navbar-btn navbar-icon content-gray" style="animation-duration: 1.5s;">
+                <i class="bi bi-pinterest"></i>
+            </div>
+            <br/>
+            <br/>
+            <div id="home-b" class="navbar-btn rotate-90 content-gray" style="animation-duration: 1.2s;">
+                .home
+            </div>
+            <div id="about-b" class="navbar-btn rotate-90 content-gray" style="animation-duration: 1.0s;">
+                .about
+            </div>
+            <div id="project-b" class="navbar-btn rotate-90 content-gray" style="animation-duration: 0.8s;">
+                .project
+            </div>
+            <br/>
+            <br/>
+        </div>
+        <div id="project-desc" class="col-6">
+            <div class="height-20-w"></div>
+            <div class="project-desc-text height-10-w content-gray">
+                <div class="project-desc-header text-bold">
+                    NAY Project
+                </div>
+            </div>
+            <div class="project-desc-text content-gray">
+                <div class="text-bold">
+                    project fact
+                </div>
+                <div style="display: flex;">
+                    <div>
+                        <div class="text-italic">location</div>
+                        <div class="text-italic">type</div>
+                        <div class="text-italic">building/area</div>
+                        <div class="text-italic">levels</div>
+                        <div style="margin-top: 4vw;">2020</div>
+                    </div>
+                    <div class="px-1">
+                        <div id="desc-location"></div>
+                        <div id="desc-type" ></div>
+                        <div id="desc-build"></div>
+                        <div id="desc-level"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-1 height-50-h project-desc-img-container">
+            <div id="project-desc-img-box" class="project-desc-img-box--lwide">
+                <section id="project-desc-img" class="splide" aria-label="Images">
+                    <div class="splide__arrows">
+                        <button class="splide__arrow--prev slide-arrow--prev project-desc-next-button">
+                            <img src="../public/svg/prev_button_dark.svg" style="rotate: 180deg;">
+                        </button>
+                        <button class="splide__arrow--next slide-arrow--next project-desc-prev-button">
+                            <img src="../public/svg/prev_button_dark.svg">
+                        </button>
+                    </div>
+                    <div class="splide__track">
+                        <ul id="project-slide" class="splide__list">
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div class="contact">
+        <div id="contact-container" class="content-container">
+            <div class="contact-info contact-info-box">
+                <div class="contact-info-text-h1">our studio:</div>
+                <div>Jetis Baran, Sardonoharjo, Kec.Ngaglik, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55581, 742'36'57.5"S 110'24'02.5"E</div>
+                <br/>
+                <div>info @inklusidesign</div>
+                <br/>
+                <br/>
+                <br/>
+            </div>
+            <div class="contact-info contact-form">
+                <div class="contact-info-text-h1">contact us</div>
+                <div hidden id="form-submission-notice" class="submission-notice">
+                    <p>Thanks for contacting us! We will be in touch with you shortly.</p>
+                </div>
+                <form id="contact-form" name="submit-to-google-sheet">
+                    <div>
+                        <input name="first-name" type="text" class="contact-form-text" placeholder="first-name">
+                        <input name="last-name" type="text" class="contact-form-text" placeholder="last-name">
+                        <input name="email" type="email" class="contact-form-text" placeholder="email" required>
+                    </div>
+                    <div>
+                        <textarea name="message" class="contact-form-text contact-form-text-area" placeholder="Message"></textarea>
+                    </div>
+                    <div>
+                        <div id="submit-form" class="contact-form-button">
+                            Submit &#8594
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>

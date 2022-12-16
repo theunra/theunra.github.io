@@ -1,103 +1,24 @@
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>Yuripedia</title>
-    <link rel="stylesheet" href="style.css"/>
+    <title>Inklusi Design</title>
+    <link rel="stylesheet" href="./global.css" type="text/css"/>
+    <script src="./scripts/home.js" type="module"></script>
 </head>
 <body>
-    <!-- header -->
-    <div class="banner">
-        <div style="color: #FFCACA; height: inherit; padding-top:5%; font-size: 150px;text-align: center;background-image: url(./public/img/banner.jpeg);background-size: cover;">YURIPEDIA</div>
+    <img class="top-logo" src="./public/logow.png"/>
+    <div hidden class="slidecontainer">
+        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
     </div>
-    <!-- body -->
-    <div class="page-body">
-        <div class="navbar">
-            <a href="./index.html" class="button white-border">Home</a>
-            <a href="./index.html" class="button white-border">Anime</a>
-            <a href="./index.html" class="button white-border">Manga</a>
-            <a href="./index.html" class="button white-border">Novel</a>
-            <a href="./index.html" class="button white-border">Game</a>
-            <a href="./pages/about.html" class="button white-border">About</a>
-        </div>
-        <div class="content">
-            <div class="main-content">
-                <div class="content-header">
-                    What is yuri?
-                </div>
-                <div class="content-body">
-                    <div class="inline-image-text">
-                        <img class="inline-image" style="height: 200px;width: auto;float: left;" src="./public/img/cstk1.PNG"/>
-                        <p>
-                            Yuri (Japanese: 百合, lit. "lily"), also known by the wasei-eigo construction girls' love 
-                            (ガールズラブ, gāruzu rabu), is a genre of Japanese media focusing on intimate relationships 
-                            between female characters. While lesbianism is a commonly associated theme, the genre is also 
-                            inclusive of works depicting emotional and spiritual relationships between women that are not 
-                            necessarily romantic or sexual in nature. Yuri is most commonly associated with anime and manga, 
-                            though the term has also been used to describe video games, light novels, and literature.
-                            <br/>
-                            Themes associated with yuri originate from Japanese lesbian fiction of the early twentieth 
-                            century, notably the writings of Nobuko Yoshiya and literature in the Class S genre. Manga depicting 
-                            female homoeroticism began to appear in the 1970s in the works of artists associated with the Year 24 
-                            Group, notably Ryoko Yamagishi and Riyoko Ikeda. The genre gained wider popularity beginning in the 1990s; 
-                            the founding of Yuri Shimai in 2003 as the first manga magazine devoted exclusively to yuri, followed by 
-                            its successor Comic Yuri Hime in 2005, led to the establishment of yuri as a discrete publishing genre 
-                            and the creation of a yuri fan culture.
-                            <br/>
-                            As a genre, yuri does not inherently target a single gender demographic, unlike its male homoerotic 
-                            counterparts yaoi (marketed towards a female audience) and gay manga (marketed towards a gay male audience). 
-                            Although yuri originated as a genre targeted towards a female audience, yuri works have been produced that 
-                            target a male audience, as in manga from Comic Yuri Hime's male-targeted sister magazine Comic Yuri Hime S.
-                        </p>
-                    </div>
-                </div>
-                <div class="content-header">
-                    Explore
-                </div>
-                <br/>
-                <div class="content-body">
-                    <button class="button black-bg">Anime</button>
-                    <button class="button black-bg">Manga</button>
-                    <button class="button black-bg">Novel</button>
-                    <button class="button black-bg">Game</button>
-                </div>
-                <br/>
-                <br/>
+
+    <div id="bg" class="bg-image bg-home navbar-blur">
+    </div>
+        <div id="main-container" class="content-container">
+            <div hidden id="main-overlay" class="navbar-background"></div>
+            <div id="navbar" class="navbar navbar--lwide">
             </div>
-            <div class="side-content">
-                <div class="white-solid-border">
-                    <div class="content-header">News</div>
-                    <div class="content-body">
-                        <div style="text-align: left;padding-left: 10px;">Now airing :</div>
-                        <img class="inline-image" style="height: 200px;width: auto;" src="./public/img/lyco10.PNG"/>
-                        <div>Lycoris Recoil Episode 10</div>
-                        <div style="text-align: left;padding-left: 10px;">
-                            For someone who is literally going to die soon, she sure is joyful. 
-                            Chisato in her yukata also looked nice but she also looks geared up ready and fight the good fight again.
-                        </div>
-                    </div>
-                    <form class="form-news">
-                        <div class="content-body align-left">Comment</div>
-                        <input type="textarea" placeholder="Woa sugoi desu ne">
-                    </form>
-                    <br/>
-                    <br/>
-                </div>
-            </div>
+            <!-- <div class="col-8 height-100-h"></div> -->
         </div>
-    </div>
-    <!-- footer -->
-    <div class="page-footer">
-        <div class="content-header align-left">Contact</div>
-        <div class="content-body align-left">
-            Find me.
-        </div>
-        <div class="content-body align-left">
-            Phone : +6281928113779
-            <br/>
-            Email : yuriologist@mail.gl.com
-        </div>
-        <br/>
-    </div>
 </body>

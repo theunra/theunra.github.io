@@ -1,58 +1,32 @@
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>Yuripedia</title>
-    <link rel="stylesheet" href="../style.css"/>
+    <title>Inklusi Design</title>
+    <link rel="stylesheet" href="../global.css" type="text/css"/>
+    <script src="../scripts/about.js" type="module"></script>
 </head>
 <body>
-    <div class="banner">
-        <img class="banner img" src="../public/img/banner.jpeg"/>
-    </div>
-    <div class="page-body">
-        <div>
-            <div class="navbar">
-                <a href="../index.html" class="button white-border">Home</a>
-                <a href="./about.html" class="button white-border">About</a>
-            </div>
-        </div>
-        <div class="content">
-            <div class="main-content">
-                <div class="content-header">
-                    About
-                </div>
-                <div class="content-body">
-                    <div class="inline-image-text">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium perspiciatis iure cupiditate 
-                            quis nisi blanditiis incidunt dolorum adipisci non, placeat, laudantium at. 
-                            Laboriosam modi dicta quis quasi id accusantium? Molestiae explicabo officiis asperiores
-                            omnis perspiciatis temporibus unde quae ipsa animi.
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium perspiciatis iure cupiditate 
-                            quis nisi blanditiis incidunt dolorum adipisci non, placeat, laudantium at. 
-                            Laboriosam modi dicta quis quasi id accusantium? Molestiae explicabo officiis asperiores
-                            omnis perspiciatis temporibus unde quae ipsa animi.
-                            <br/>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium perspiciatis iure cupiditate 
-                            quis nisi blanditiis incidunt dolorum adipisci non, placeat, laudantium at. 
-                            Laboriosam modi dicta quis quasi id accusantium? Molestiae explicabo officiis asperiores
-                            omnis perspiciatis temporibus unde quae ipsa animi.
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium perspiciatis iure cupiditate 
-                            quis nisi blanditiis incidunt dolorum adipisci non, placeat, laudantium at. 
-                            Laboriosam modi dicta quis quasi id accusantium? Molestiae explicabo officiis asperiores
-                            omnis perspiciatis temporibus unde quae ipsa animi.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="side-content">
-                <div class="content-header">News</div>
-                <div class="content-body">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque, saepe! Labore deserunt officiis libero aut sapiente. Ea quod nam ducimus.
-                </div>
-            </div>
+    <div id="overlay" class="overlay">
+        <div id="overlay-content" class="overlay-content">
+            <div class="overlay-text">
+                This is <span id="catchphrase" class="overlay-text-special">intuisi</span> For You.
             </div>
         </div>
     </div>
+    <img class="top-logo top-logo-about-page" src="../public/logow.png"/>
+    <div id="bg" class="bg-image bg-page-about navbar-blur">
+    </div>
+        <div class="content-container">
+            <div hidden id="main-overlay" class="navbar-background"></div>
+            <div id="navbar" class="navbar navbar--lwide">
+            </div>
+            <div class="col-6"></div>
+            <div class="content-container navbar-blur">
+                <div id="profile-box" class="profile-box profile-box--lwide">
+                </div>
+            </div>
+        </div>
+    
 </body>

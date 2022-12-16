@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Inklusi Design</title>
+    <script src="../scripts/project.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"/>
+    <link rel="stylesheet" href="../global.css" type="text/css"/>
+</head>
+<body>
+    <img style="top:3vw;" class="top-logo" src="../public/logow.png"/>
+    <div class="bg-gray">
+    <div id="bg" class="bg-image bg-page-project navbar-blur">
+    </div>
+        <div class="content-container">
+            <div hidden id="main-overlay" class="navbar-background"></div>
+            <div id="navbar" class="navbar navbar--lwide">
+            </div>
+            <div id="dynamic-col" class="height-100-h dynamic-w dynamic-w--lsquare"></div>
+            <div class="col-2">
+                <div id="pd-box-1" class="project-display-box project-display-box--lwide navbar-blur">
+                    <div id="projects" class="content-container">
+                        <section id="top-display" class="splide" aria-label="Images">
+                            <div class="splide__arrows">
+                                <button class="splide__arrow--prev slide-arrow--prev project-display-button top-display-next-button">
+                                    <div style="display: flex;">
+                                        <div id="project-display-button-text1" class="project-display-button-text">residential</div>
+                                        <!-- <img src="../public/svg/next_button_extra.svg" class="rotate-180" style="width: 20vw; height: auto;"> -->
+                                        <img src="../public/svg/prev_button.svg" class="rotate-180 project-display-button-arrow">
+                                    </div>
+                                </button>
+                                <button class="splide__arrow--next slide-arrow--next project-display-button top-display-prev-button">
+                                    <img src="../public/svg/prev_button.svg" class="project-display-button-arrow">
+                                </button>
+                            </div>
+                            <div class="splide__track">
+                                <ul id="slides-top" class="splide__list">
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+                    <div id="projects" class="content-container">
+                        <section id="mid-display" class="splide" aria-label="Images">
+                            <div class="splide__arrows">
+                                <button class="splide__arrow--prev slide-arrow--prev project-display-button top-display-next-button">
+                                    <div style="display: flex;">
+                                        <div id="project-display-button-text2" class="project-display-button-text">commercial/public</div>
+                                        <img src="../public/svg/next_button_extra.svg" class="rotate-180" style="width: 20vw; height: auto;">
+                                    </div>
+                                </button>
+                                <button class="splide__arrow--next slide-arrow--next project-display-button top-display-prev-button">
+                                    <img src="../public/svg/prev_button.svg" style="width: 1.5vw;">
+                                </button>
+                            </div>
+                            <div class="splide__track">
+                                <ul id="slides-mid" class="splide__list">
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+                    <div id="projects" class="content-container">
+                        <section id="bot-display" class="splide" aria-label="Images">
+                            <div class="splide__arrows">
+                                <button class="splide__arrow--prev slide-arrow--prev project-display-button top-display-next-button">
+                                    <div style="display: flex;">
+                                        <div id="project-display-button-text3" class="project-display-button-text">interior</div>
+                                        <img src="../public/svg/next_button_extra.svg" class="rotate-180" style="width: 20vw; height: auto;">
+                                    </div>
+                                </button>
+                                <button class="splide__arrow--next slide-arrow--next project-display-button top-display-prev-button">
+                                    <img src="../public/svg/prev_button.svg" style="width: 1.5vw;">
+                                </button>
+                            </div>
+                            <div class="splide__track">
+                                <ul id="slides-bot" class="splide__list">
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- </div> -->
+    <div class="contact contact-dark navbar-blur">
+        <div id="contact-container" class="content-container">
+            <div class="contact-info contact-info-box contact-info-dark">
+                <div class="contact-info-text-h1">our studio:</div>
+                <div>Jetis Baran, Sardonoharjo, Kec.Ngaglik, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55581, 742'36'57.5"S 110'24'02.5"E</div>
+                <br/>
+                <div>info @inklusidesign</div>
+                <br/>
+                <br/>
+                <br/>
+            </div>
+            <div class="contact-info contact-form contact-info-dark">
+                <div class="contact-info-text-h1">contact us</div>
+                <div hidden id="form-submission-notice" class="submission-notice">
+                    <p>Thanks for contacting us! We will be in touch with you shortly.</p>
+                </div>
+                <div hidden id="form-failed-notice" class="failed-notice">
+                    <p>Submission failed.</p>
+                </div>
+                <form id="contact-form" name="submit-to-google-sheet">
+                    <div>
+                        <input name="first-name" type="text" class="contact-form-text contact-form-text-dark" placeholder="first-name">
+                        <input name="last-name" type="text" class="contact-form-text contact-form-text-dark" placeholder="last-name">
+                        <input name="email" type="email" class="contact-form-text contact-form-text-dark" placeholder="email" required>
+                    </div>
+                    <div>
+                        <textarea name="message" class="contact-form-text contact-form-text-area" placeholder="Message"></textarea>
+                    </div>
+                    <div>
+                        <div id="submit-form" class="contact-form-button contact-form-button-dark">
+                            Submit &#8594
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
